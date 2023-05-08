@@ -19,7 +19,16 @@ header{
 }
 .destaque-texto{
     margin: 3rem;
-    
+    animation: animadestaque linear 1s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animadestaque {
+    from{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    to{transform: translateX(0px);}
 }
 
 .destaque-servicos h2{
