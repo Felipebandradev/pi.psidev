@@ -7,9 +7,9 @@ botao.addEventListener("click", function(event) {
     linksmenu.classList.toggle("aberto")
     
     if (linksmenu.classList.contains("aberto")) {
-        icone.innerHTML = "Fechar&times";
+        icone.innerHTML = "Fechar &times";
     } else {
-        icone.innerHTML = "Menu&equiv;";
+        icone.innerHTML = "Menu &equiv;";
     };
 
 });

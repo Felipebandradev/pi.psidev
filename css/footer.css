@@ -51,6 +51,7 @@ footer p a:hover {
 }
 
 footer p {
+    margin-bottom: 15px;
     margin-top: 30px;
     font-weight: 600;
 }
