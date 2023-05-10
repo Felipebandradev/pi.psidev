@@ -1,15 +1,15 @@
 const botao = document.querySelector("nav h2");
-const linksmenu = document.querySelector(".menu");
-const icone = document.querySelector(".icone");
+const linksMenu = document.querySelector(".menu");
+const icone = document.querySelector(".icone img");
 
 botao.addEventListener("click", function(event) {
     event.preventDefault();
-    linksmenu.classList.toggle("aberto")
+    linksMenu.classList.toggle("aberto")
     
-    if (linksmenu.classList.contains("aberto")) {
-        icone.innerHTML = "Fechar &times";
+    if (linksMenu.classList.contains("aberto")) {
+        icone.src = "/assets/icon-fechar.svg";
     } else {
-        icone.innerHTML = "Menu &equiv;";
+        icone.src = "/assets/icon-menu.svg";
     };
 
 });

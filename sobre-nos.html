@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psiquedev</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/sobre-nos.css">
 </head>
 <body>
@@ -273,8 +274,8 @@
       </header>
   
     <main>
-        <article class="destaque-sobre-nos ">
-            <div class="texto-destaque">
+        <article class="destaque ">
+            <div class="texto-destaque limitador" data-aos="fade-right">
                 <h2>Sobre Nós</h2>
                 <p>Cuide da sua saúde mental e encontre o equilíbrio emocional na nossa clínica de psicólogos.</p>
             </div>
@@ -339,6 +340,14 @@
             Psidevs 2023. Alguns direitos reservados ©
         </p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        // once: true
+      });
+    </script>
     <script src="js/menu.js"></script>
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <div class="elfsight-app-41109b22-4fa2-4d90-aa0d-bc2686e27c40"></div>
