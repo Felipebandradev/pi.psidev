@@ -67,17 +67,18 @@ header{
 
 .texto{
     margin: 4rem auto;
-    width: 60%;
-    text-align: center;
+    width: 63%;
+    text-align: left;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: var(--quinary-color)
-    
+    color: var(--quinary-color);
+    font-size: 1.7rem;
 
 }
 
 .texto p{
     padding-left: 2rem;
-    margin: 2rem;
+    margin: 2.1rem;
+    line-height: 25px;
 
 }
 
@@ -95,8 +96,8 @@ header{
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
-    width: 68%;
-    margin-top: 7rem;
+    width: 65%;
+    margin-top: 7.5rem;
 }
 .cards img {
     border-radius: 7px 7px 0 0;
@@ -130,8 +131,8 @@ header{
     margin: 10px;
 }
 .card1:hover, .card2:hover, .card3:hover, .card4:hover{
-    transform: scale(1.03);
     box-shadow: #72727283 0 4px 21px 1px ;
+    transform: scale(1.03);
     /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
 
 }
@@ -143,23 +144,35 @@ header{
     padding: 1rem;
 }
 .faq{
-    width: 85%;
-    margin: 8rem auto;
+    width: 74%;
+    margin: 8rem auto 12rem auto;
 
 }
+.faq small{
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+}
+.faq h2{
+    text-align: center;
+    margin-bottom: 4.5rem;
+    color: #424242;
+}
+summary{
+    margin-left: 5rem;
+}
 details{
-    background-color: #143c86;
+    background-color: #E9F0FF;
     width: 73%;
-    margin: 1rem auto;
-    padding: 0.8rem;
-    border-radius: 10px;
-    color: white;
+    margin: 1.5rem auto;
+    padding: 1.2rem;
+    border-radius: 5px;
+    color: #042066;
+    font-size: 19px;
+    border: solid 1px #4262b3;
 }
 .conteudo-faq{
-    margin-top: 20px;
-}
-h4{
-    text-align: center;
+    margin: 24px 0 0 40px;
 }
 
 @media screen and (max-width:670px) {
@@ -169,9 +182,17 @@ h4{
     .destaque-texto{
         text-align: center;
     }
+    .cards{
+        width: 100%;
+    }
+    .texto{
+        width: 90%;
+    }
 }
 @media screen and (max-width:650px) {
-    html{ font-size: 14px;}
+    body{ font-size: 14px;}
 }
+
+
 
 
