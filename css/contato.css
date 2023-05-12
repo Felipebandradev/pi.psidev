@@ -39,6 +39,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-flow: row wrap;
     
 }
 
@@ -47,15 +48,15 @@
 }
 
 .texto-contato {
-    max-width: 600px;
-    margin-left: 80px;
+    max-width: 600px;   
 }
 
-.texto-contato h1 {
-    font-size: 50px;
+.texto-contato h2 {
+    font-size: 4em;
+    margin-bottom: 3rem;
 }
 .texto-contato p {
-    font-size: 20px;
+    font-size: 2rem;
 }
 address, .tel, .email {
     margin-right: 3rem;
@@ -67,10 +68,10 @@ address, .tel, .email {
     display: flex;
 }
 .endereco-texto b, .endereco-tel-email b {
-    font-size: 20px;
+    font-size: 2rem;
 }
 .endereco-texto p, .endereco-tel-email a {
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 address, .tel, .email {    
@@ -98,4 +99,43 @@ address, .tel, .email {
 .contato-mapa iframe {
     width: 100%;
 
+}
+@media screen and (max-width:793px){ 
+    .enderecos-instituicao{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .assunto{flex-direction: column-reverse;}
+
+    .assunto form{ margin-bottom: 20px;}
+
+    .texto-contato{margin-bottom: 20px;}
+
+
+    .enderecos-instituicao div {
+        margin: 1.4rem;
+    }
+
+}
+
+@media screen and (max-width:605px) {
+    .enderecos img {
+        width: 50px;
+    }
+
+    .destaque-contato  {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:400px) {  
+    html {
+        font-size: 45%;
+    }
+
+    .assunto input, textarea {
+        /* box-shadow: 0 0 5px #00000099; */
+        border: 1px solid rgba(0, 0, 0, 0.259);
+    }
 }
