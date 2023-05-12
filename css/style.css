@@ -168,7 +168,9 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 80vh;
+  min-height: 80vh;
+
+  padding: 5rem 0;
 
   display: flex;
   justify-content: center;
@@ -434,7 +436,9 @@ nav {
   background: url(/assets/motivacional-pt1.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60vh;
+  min-height: 60vh;
+
+  padding: 5rem 0;
 
   display: flex;
   justify-content: center;
@@ -537,7 +541,7 @@ nav {
   flex-direction: column;
 }
 
-iframe {
+.contato-principal iframe {
   margin-left: 60px;
   width: 450px;
 }
@@ -552,8 +556,8 @@ form {
   border-radius: 5px;
 }
 label {
-  font-weight: 400;
-  font-size: 1.4rem;
+  font-weight: 500;
+  font-size: 1.5rem;
   line-height: 17px;
   display: block;
   color: var(--senary-color);
@@ -584,7 +588,7 @@ textarea {
 input,
 textarea {
   font-family: var(--font-family-primary);
-  box-shadow: 0 0 3px #00000050;
+  border: 1px solid #00000056;
   padding: 8px;
 }
 
@@ -624,6 +628,8 @@ form button:focus {
   background-size: cover;
   background-repeat: no-repeat;
   height: 60vh;
+
+  padding: 5rem 0;
 
   display: flex;
   justify-content: center;
@@ -803,7 +809,7 @@ footer p {
     margin: 0 auto;
   }
 
-  iframe {
+  .contato-principal iframe {
     margin-top: 4rem;
     margin-left: 0;
     width: 100%;
@@ -941,6 +947,17 @@ footer p {
 .bem-vindo ul li {
   width:100%;
 }
+
+.nos-escolher-texto article {
+  min-width: 268px;
+  margin: 2rem;
+}
+
+.nos-escolher-conteudo {
+  margin-left: 0;
+  margin-top: 15px;
+  text-align: center;
+}
   
 }
 
@@ -949,10 +966,27 @@ footer p {
   .info-num-adress {
     width: auto; 
   }
+
+  .info-bg {
+    position: unset;
+    top: unset;
+  }
+
+  header {
+    top: 0;
+  }
 }
 
 @media screen and (max-width: 388px) {
   .info-num-adress div:nth-child(1) {
     display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 338px) {
+  .servicos-img-texto article {
+    min-width: 250px;
   }
 }
