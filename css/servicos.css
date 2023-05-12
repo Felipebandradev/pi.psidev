@@ -81,7 +81,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
-    width: 66%;
+    width: 64%;
     margin-top: 7.5rem;
 }
 .cards img {
@@ -92,17 +92,15 @@ header{
     display: inline-block;
     text-decoration: none;
     color: #f5f5f5;
-    background-color: #455dac;
+    background-color: #67B0CF;
     /* background-color: #007EA7; */
     padding: 0.6rem 0.8rem;
-    border: solid 1px #2e748a;
-    border-radius: 8px;
+    border: solid 1px #2ca4c9;
+    border-radius: 4px;
     margin: 20px 15px;
 }
 .cards a:hover, .texto a:focus{
-    background-color: #5770c4;
-    border: solid 1px #0576aa;
-
+    background-color: #5ba4c4;
 }
 
 .card1,.card2, .card3, .card4{
@@ -152,9 +150,9 @@ details{
     margin: 1.5rem auto;
     padding: 1.3rem;
     border-radius: 5px;
-    color: #042066;
+    color: #041d5e;
     font-size: 17px;
-    border: solid 1px #4262b3;
+    border: solid 1px #4280b3;
 }
 .conteudo-faq{
     margin: 24px 0 0 40px;
