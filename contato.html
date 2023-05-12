@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato | Psidevs</title>
+  <title>Contato | Psidev</title>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="shortcut icon" href="assets/logo-favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
@@ -174,7 +174,7 @@
       </div>
     </section>
     <article class="assunto limitador">
-      <form action="#" method="post">
+      <form id="my-form" action="https://formspree.io/f/mbjebokg" method="post">
         <div>
           <div>
             <label for="nome">Nome</label>
@@ -197,7 +197,8 @@
             placeholder="Mensagem"
             required
           ></textarea>
-          <button type="submit">Enviar mensagem</button>
+          <button id="my-form-button" type="submit">Enviar mensagem</button>
+          <p id="my-form-status"></p>
         </div>
       </form>
       <section class="texto-contato">
@@ -321,8 +322,8 @@
   <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
   <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
   <div class="elfsight-app-41109b22-4fa2-4d90-aa0d-bc2686e27c40"></div>
-
   <script src="js/menu.js"></script>
+  <script src="js/formulario.js"></script>
 </body>
 
 </html>
