@@ -55,14 +55,14 @@ header{
     text-align: left;
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: var(--quinary-color);
-    font-size: 1.7rem;
+    font-size: 1.9rem;
 
 }
 
 .texto p{
     padding-left: 2rem;
     margin: 2.1rem;
-    line-height: 25px;
+    line-height: 27px;
 
 }
 
