@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display&family=Roboto&display=swap');
 *{ box-sizing: border-box;}
-.destaque{
+.destaque {
     background-image: url(../img/fundo-sobre-nos.jpg);
     background-size: cover;
     background-position: center;
@@ -26,8 +26,14 @@
 
 
 .quem-somos{
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.quem-somos img{
+    max-width: 500px;
 }
 
 
@@ -37,8 +43,12 @@
 }
 
 .quem-somos-texto p{
+    line-height: 25px;
+    margin-bottom: 2.1rem;
     padding-left: 2rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    max-width: 607px;
+    margin-right: 1rem;
 }
 
 .quem-somos-texto h2{
@@ -47,6 +57,38 @@
     text-align: center;
 }
 
+.profissionais {
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.profissionais-titulo {
+    font-size: 3rem;
+    margin: 10rem 0;
+    text-align: center;
+}
+
+.profissionais figure img {
+    margin: auto;
+    padding: auto;
+}
+
+.fundo {
+    background-image: url(../img/Wave.svg);
+    background-size: cover;
+    padding-top: 5px;
+    padding-bottom: 5px;
+} 
+
+
+
+
+@media screen and (max-width:920px) {
+    .quem-somos img{
+        display: none;
+    }
+}
 
 @media screen and (max-width:670px) {
     .texto-destaque{
@@ -54,5 +96,12 @@
     }
 }
 
+@media screen and (max-width:480px) {
+    .profissionais {
+        margin: 0;
+    }
 
-
+    .profissionais figure img {
+        width: 100%;
+    }
+}
