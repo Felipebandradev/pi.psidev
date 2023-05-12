@@ -303,7 +303,7 @@ nav {
   width: 15px;
   height: 15px;
   margin-right: 10px;
-  background-image: url("/assets/seta-bem-vindo.svg");
+  background-image: url("../assets/seta-bem-vindo.svg");
   background-repeat: no-repeat;
   background-size: contain;
   vertical-align: middle;
@@ -433,7 +433,7 @@ nav {
 
 .motivacional-pt1 {
   margin-top: var(--margin-primary);
-  background: url(/assets/motivacional-pt1.jpeg);
+  background: url(../assets/motivacional-pt1.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 60vh;
@@ -624,7 +624,7 @@ form button:focus {
 }
 
 .motivacional-pt2 {
-  background: url(/assets/motivacional-pt2.jpg);
+  background: url(../assets/motivacional-pt2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 60vh;
