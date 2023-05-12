@@ -49,7 +49,7 @@ main {
   flex: 1;
 }
 
-img {
+img:not(header h1 a img) {
   max-width: 100%;
 }
 
@@ -109,7 +109,7 @@ img {
 header {
   background-color: var(--primary-color);
   position: sticky;
-  top: 50px;
+  top: 46px;
   z-index: 10;
   padding: 25px 0;
 }
@@ -594,7 +594,7 @@ textarea {
 
 input:hover,
 textarea:hover {
-  border: 0.4px solid var(--senary-color);
+  border: 1px solid var(--senary-color);
 }
 
 input:focus,
@@ -888,7 +888,7 @@ footer p {
     background-color: var(--primary-color);
     align-items: center;
     position: absolute;
-    top: 94px;
+    top: 87px;
     right: 0;
     left: 0;
   }
@@ -982,7 +982,23 @@ footer p {
     display: none;
   }
 
+  header {
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    padding: 25px 0;
+  }
+  
+  .info-bg {
+    position: unset;
+    top: unset;
+  }
 
+  header h1 a img {
+    max-width: 100%;
+    min-width: 150px;
+  }
 }
 
 @media screen and (max-width: 338px) {
