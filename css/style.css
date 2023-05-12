@@ -164,7 +164,7 @@ nav {
 }
 
 .destaque {
-  background: url(/assets/destaque.jpeg);
+  background: url(../assets/destaque.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
