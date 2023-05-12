@@ -24,7 +24,6 @@ header{
 
 }
 .destaque-texto{
-
     margin: 0 auto;
     max-width: 1200px;
     width: calc(
@@ -48,45 +47,32 @@ header{
     margin: 24px 0;
   }
 
-/* .destaque-servicos h2{
-    color: rgb(240, 248, 255);
-    margin: 0 auto;
-    max-width: 1200px;
-    width: calc(
-      100% - 100px
-    );
-    
-}
-.destaque-servicos p{
-    color: rgb(240, 248, 255);
-
-} */
-
-
 
 
 .texto{
     margin: 4rem auto;
-    width: 60%;
-    text-align: center;
+    width: 63%;
+    text-align: left;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: var(--quinary-color)
-    
+    color: var(--quinary-color);
+    font-size: 1.7rem;
 
 }
 
 .texto p{
     padding-left: 2rem;
-    margin: 2rem;
+    margin: 2.1rem;
+    line-height: 25px;
 
 }
 
 .texto h2{
-    margin: 2rem 0;
+    font-size: 2.8rem;
+    margin-bottom: 4.4rem;
     text-align: center;
 }
-
-.cards h3, p{
+/*esses*/
+.cards h3, .cards p {
     padding: 2px 16px;
 }
 
@@ -95,8 +81,8 @@ header{
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
-    width: 68%;
-    margin-top: 7rem;
+    width: 66%;
+    margin-top: 7.5rem;
 }
 .cards img {
     border-radius: 7px 7px 0 0;
@@ -130,8 +116,8 @@ header{
     margin: 10px;
 }
 .card1:hover, .card2:hover, .card3:hover, .card4:hover{
-    transform: scale(1.03);
     box-shadow: #72727283 0 4px 21px 1px ;
+    transform: scale(1.03);
     /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
 
 }
@@ -143,35 +129,94 @@ header{
     padding: 1rem;
 }
 .faq{
-    width: 85%;
-    margin: 8rem auto;
+    width: 74%;
+    margin: 8rem auto 12rem auto;
 
+}
+.faq small, .texto small{
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+}
+.faq h2{
+    text-align: center;
+    margin-bottom: 4.5rem;
+    color: #424242;
+}
+summary{
+    margin-left: 5rem;
 }
 details{
-    background-color: #143c86;
+    background-color: #E9F0FF;
     width: 73%;
-    margin: 1rem auto;
-    padding: 0.8rem;
-    border-radius: 10px;
-    color: white;
+    margin: 1.5rem auto;
+    padding: 1.3rem;
+    border-radius: 5px;
+    color: #042066;
+    font-size: 17px;
+    border: solid 1px #4262b3;
 }
 .conteudo-faq{
-    margin-top: 20px;
-}
-h4{
-    text-align: center;
+    margin: 24px 0 0 40px;
 }
 
+@media screen and (max-width:1100px){
+    summary{
+        margin-left: 0.5rem;
+        font-size: 1.4;
+    }
+    .destaque-servicos{
+        height: 85vh;
+    }
+    .cards{
+        width: 69%;
+    }
+    details{
+        font-size: 1.6rem;
+    }
+
+}
+@media screen and (max-width:900px){
+    .texto-card{
+        font-size: 1.48rem;
+    }
+}
+@media screen and (max-width:815px){
+    .cards{
+        width: 86%;
+    }
+    .texto{
+        width: 78%;
+    }
+    .texto h2{
+        font-size: 2.4rem;
+    }
+
+}
 @media screen and (max-width:670px) {
     .card1,.card2, .card3, .card4{
-        width: 80%;
+        width: 83%;
     }
     .destaque-texto{
         text-align: center;
     }
+    .cards{
+        width: 95%;
+    }
+
+    .texto{
+        width: 90%;
+    }
+    .faq{
+        width: 100%;
+    }
+    summary{
+    margin-left: 1rem;
+    }
+    body{ font-size: 14px;}
 }
-@media screen and (max-width:650px) {
-    html{ font-size: 14px;}
-}
+
+
+
 
 
