@@ -53,6 +53,10 @@ img:not(header h1 a img) {
   max-width: 100%;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* INICIO HOME */
 
 .limitador {
@@ -200,7 +204,9 @@ nav {
   line-height: 3rem;
 }
 
-.destaque button {
+.destaque a {
+  display: inline-block;
+  margin-top: 24px;
   background: #415da1;
   border-radius: 5px;
   font-size: 1.6rem;
@@ -208,6 +214,7 @@ nav {
   padding: 14px 24.72px 14px 23.28px;
   border: none;
   margin-top: 41px;
+  text-decoration: none;
   color: var(--quaternary-color);
   height: 48px;
   letter-spacing: var(--letter-spacing);
@@ -309,7 +316,10 @@ nav {
   vertical-align: middle;
 }
 
-.bem-vindo button {
+.bem-vindo a {
+  display: inline-block;
+  margin-top: 24px;
+  text-decoration: none;
   background: #415da1;
   padding: 14px 30.34px 14px 30.66px;
   font-weight: 500;
